@@ -1,0 +1,107 @@
+body {
+    background:
+    repeating-linear-gradient(45deg, rgba(70, 19, 19, 0.888), black 25px, white 20px);
+    min-height: 100vh;
+    background-size: cover;
+    
+}
+
+.highlight-box {
+    background: rgba(0, 0, 0, 0.6);
+    padding:20px;
+    border:2px solid #5a1e1e;
+    backdrop-filter: blur(5px);
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.highlight-box-end {
+    background: rgba(0, 0, 0, 0.6);
+    padding:20px;
+    border:2px solid #5a1e1e;
+    backdrop-filter: blur(5px);
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px
+}
+
+h1 {
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: linear-gradient(white, rgb(90, 18, 18));
+    color: transparent;
+    background-clip: text;
+
+}
+
+h2 {
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: linear-gradient(rgb(90, 18, 18), white);
+    color: transparent;
+    background-clip: text;
+    margin: auto;
+
+}
+
+.centerer {
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.quote-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    border:2px solid #5a1e1e;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    white-space: nowrap;
+    padding: 10px 0;
+
+}
+
+.quote-track {
+    display: flex;
+    gap: 10px; /* Adjust spacing */
+    width: max-content;
+    animation: scrollInfinite 20s linear infinite;
+}
+
+/* Create a seamless loop by moving the text continuously */
+@keyframes scrollInfinite {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-30%); /* Moves half the duplicated content */
+    }
+}
+
+.quote {
+    font-size: 20px;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.itry {
+    height: 500px;
+}
+
+.img {
+    display: flex;
+}
+
+#setter {
+
+    display: inline-block;
+    margin-right: 1%;
+
+}
